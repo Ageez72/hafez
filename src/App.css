@@ -1,0 +1,98 @@
+@font-face {
+  font-family: 'Mcs Quran';
+  src: url('./assets/fonts/Mcs-Quran.woff2') format('woff2'),
+      url('./assets/fonts/Mcs-Quran.woff') format('woff'),
+      url('./assets/fonts/Mcs-Quran.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PDMS_Saleem_QuranFont';
+  src: url('./assets/fonts/_PDMS_Saleem_QuranFont.woff2') format('woff2'),
+      url('./assets/fonts/_PDMS_Saleem_QuranFont.woff') format('woff'),
+      url('./assets/fonts/_PDMS_Saleem_QuranFont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap');
+.highlight {
+  background-color: yellow;
+}
+
+
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #F7F4FB;
+}
+
+.App-header {
+  text-align: center;
+  background-color: #282c34;
+  align-items: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+h1 {
+  margin-top: 0;
+}
+select {
+  font-family: 'Oswald', sans-serif;
+    font-size: 1em;
+    cursor: pointer;
+    padding: 5px 10px 8px;
+    border: 2px solid #cbcbcb;
+    border-radius: 10px;
+    color: #453D52;
+}
+.ar {
+  font-family: 'Vazirmatn', sans-serif;
+}
+option {
+  cursor: pointer;
+}
+hr {
+  margin: 70px 0 40px;
+  border: none;
+  background: #cbcbcb;
+  height: 1px;
+}
+@media (max-width:768px) {
+  .surah-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .surah-container .SurahCategory {
+    order:1
+  }
+  .surah-container .player-control {
+    order:2;
+    margin-top: 0;
+    margin-bottom: 40px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  .surah-container .surah {
+    order:3
+  }
+  .surah-container .surah img {
+    width: 100%;
+  }
+  .surah-container hr {
+    display: none;
+  }
+}
+@media (max-width:560px) {
+  .surah-container .player-control {
+    flex-direction: column;
+  }
+  .surah-container .player-control select {
+    margin-bottom: 20px;
+  }
+}

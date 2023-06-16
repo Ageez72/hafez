@@ -1,0 +1,64 @@
+.surah {
+    direction: rtl;
+    text-align: justify;
+    line-height: 1.5;
+    height: 500px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-left: 30px;
+    
+}
+
+.surah span {
+    font-size: 2.5em;
+    /* font-weight: 700; */
+    font-family: 'PDMS_Saleem_QuranFont';
+    /* letter-spacing: 1px; */
+    word-spacing: 5px;
+}
+
+.surah img {
+    display: block;
+    margin: auto;
+}
+
+
+
+.surah .ayah {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    position: relative;
+    background-image: url("../../../assets/imgs/ayah2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0 5px;
+    cursor: pointer;
+}
+.surah .ayah:before {
+    content: attr(data-ayah);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    height: 100%;
+    font-size: 0.5em;
+    text-align: center;
+    line-height: 40px;
+    color: #b30d05;
+    font-weight: 700;
+}
+.surah::-webkit-scrollbar {
+    width: 10px;
+  }
+   
+  .surah::-webkit-scrollbar-track {
+    background-color: #e4e4e4;
+    border-radius: 100px;
+  }
+   
+  .surah::-webkit-scrollbar-thumb {
+    background-color: #5FC2A1;
+    border-radius: 100px;
+  }
