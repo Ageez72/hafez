@@ -1,0 +1,59 @@
+.moshaf-container {
+    .surah-info {
+        display: flex;
+        align-items: center;
+        padding: 15px 0;
+        background: #fff;
+        border-bottom: 1px solid #ccc;
+
+        .surah-number {
+            flex: 2;
+            text-align: center;
+            font-family: "Oswald";
+            font-size: 18px;
+            color: #000;
+        }
+
+        .surah-en-info {
+            flex: 5;
+
+            .en-name {
+                font-family: "Oswald";
+                font-weight: 600;
+                font-size: 16px;
+                margin-top: 0;
+                margin-bottom: 5px;
+                color: #000;
+            }
+
+            .extra-info {
+                display: flex;
+                align-items: center;
+
+                .en-translation-name {
+                    font-family: "Oswald";
+                    font-weight: 300;
+                    color: #b7b7b7;
+                }
+
+                .surah-place {
+                    width: 20px;
+                    margin-left: 8px;
+                }
+            }
+        }
+
+        .surah-ar-info {
+            flex: 5;
+            padding-right: 10px;
+
+            .ar-name {
+                font-family: "Lateef", serif;
+                font-size: 1.8rem;
+                margin: 0;
+                font-weight: 500;
+                color: #000;
+            }
+        }
+    }
+}

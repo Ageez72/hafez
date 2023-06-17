@@ -1,34 +1,38 @@
 @font-face {
-  font-family: 'Mcs Quran';
-  src: url('./assets/fonts/Mcs-Quran.woff2') format('woff2'),
-      url('./assets/fonts/Mcs-Quran.woff') format('woff'),
-      url('./assets/fonts/Mcs-Quran.ttf') format('truetype');
+  font-family: "Mcs Quran";
+  src: url("./assets/fonts/Mcs-Quran.woff2") format("woff2"),
+    url("./assets/fonts/Mcs-Quran.woff") format("woff"),
+    url("./assets/fonts/Mcs-Quran.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
-  font-family: 'PDMS_Saleem_QuranFont';
-  src: url('./assets/fonts/_PDMS_Saleem_QuranFont.woff2') format('woff2'),
-      url('./assets/fonts/_PDMS_Saleem_QuranFont.woff') format('woff'),
-      url('./assets/fonts/_PDMS_Saleem_QuranFont.ttf') format('truetype');
+  font-family: "Nabi";
+  src: url("./assets/fonts/Nabi.eot");
+  src: url("./assets/fonts/Nabi.eot?#iefix") format("embedded-opentype"),
+    url("./assets/fonts/Nabi.woff2") format("woff2"),
+    url("./assets/fonts/Nabi.woff") format("woff"),
+    url("./assets/fonts/Nabi.ttf") format("truetype"),
+    url("./assets/fonts/Nabi.svg#Nabi") format("svg");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
+@import url("https://fonts.googleapis.com/css2?family=Lateef:wght@500;600&family=Noto+Naskh+Arabic:wght@500;600&family=Oswald:wght@200;300;500;600&display=swap");
+@import url("./assets/icomoon/style.css");
 
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap');
 .highlight {
-  background-color: yellow;
+  background: -webkit-linear-gradient(#2c99ef, #d672ef);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-
-body{
+body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #F7F4FB;
+  background-color: #f7f4fb;
 }
 
 .App-header {
@@ -43,16 +47,16 @@ h1 {
   margin-top: 0;
 }
 select {
-  font-family: 'Oswald', sans-serif;
-    font-size: 1em;
-    cursor: pointer;
-    padding: 5px 10px 8px;
-    border: 2px solid #cbcbcb;
-    border-radius: 10px;
-    color: #453D52;
+  font-family: "Oswald", sans-serif;
+  font-size: 1em;
+  cursor: pointer;
+  padding: 5px 10px 8px;
+  border: 2px solid #cbcbcb;
+  border-radius: 10px;
+  color: #453d52;
 }
 .ar {
-  font-family: 'Vazirmatn', sans-serif;
+  font-family: "Vazirmatn", sans-serif;
 }
 option {
   cursor: pointer;
@@ -63,23 +67,29 @@ hr {
   background: #cbcbcb;
   height: 1px;
 }
-@media (max-width:768px) {
+a {
+  text-decoration: none;
+}
+.overflow-hidden {
+  overflow: hidden;
+}
+/* @media (max-width: 768px) {
   .surah-container {
     display: flex;
     flex-direction: column;
   }
   .surah-container .SurahCategory {
-    order:1
+    order: 1;
   }
   .surah-container .player-control {
-    order:2;
+    order: 2;
     margin-top: 0;
     margin-bottom: 40px;
     justify-content: space-evenly;
     flex-wrap: wrap;
   }
   .surah-container .surah {
-    order:3
+    order: 3;
   }
   .surah-container .surah img {
     width: 100%;
@@ -88,11 +98,11 @@ hr {
     display: none;
   }
 }
-@media (max-width:560px) {
+@media (max-width: 560px) {
   .surah-container .player-control {
     flex-direction: column;
   }
   .surah-container .player-control select {
     margin-bottom: 20px;
   }
-}
+} */
